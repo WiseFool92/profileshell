@@ -88,10 +88,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 | :--------------------------------------------------------: | :----: | :-----: |
 | Visitors can view but not create posts | 'Home Page' | |'http://localhost:3000/' |
 | The visitors can create a profile | 'Select Create profile' | 'Create profile window populates' |
-| The users can post in the forums | 'Click add tap & fill our form' | 'Tap is added to the list' |
-| The users can vote on posts | 'Click on a tap' | 'Tap Details Page' |
-| Most upvoted posted float to the top | 'Click Sell Pint' | '1 pint decrements from tap' |
-| Forums can be sorted by a timestamp or most upvotes | 'Click on the tap & Edit the tap form' | 'Refreshed Tap' |
+| The users can post in the forums | 'Click create post and populate the form' | 'Posts in forum' |
+| Users can comment on posts | 'Click on a post, then click on comment' | | 'Posts comment to forum post' |
+| The users can vote on posts | 'Click the upvote' | 'Vote added to post' |
+| Most upvoted posted float to the top | 'Votes' | 'Post Ordering' |
+| Forums can be sorted by a timestamp or most upvotes | 'Toggle sorting' | 'Sorting swaps between time and votes' |
+| Users can search for other users by username | 'Key-Word search'| | 'Can Select user for a DM or Group Invite' |
+| Users can search the forums by post name | 'Key-Word search' | | 'Can select post and comment and/or vote' |
+| Users can direct message | 'Select username and compose message' | |'Other user recieves message'|
+| User can view their direct message conversations | 'Select messages' | | 'Conversation display between users' |
+| Users can create groups & invite other users to it | 'Create & Invite' | | 'Group with members' |
+| Users can see who is also in the same group as them | 'View the group page' | | 'User can see a list of other users in the group' |
+| Users can find other users through their groups for direct messaging | 'Select member and compose message' | | 'other user in group recieves message' |
 
 ---
 
