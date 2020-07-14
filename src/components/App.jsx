@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import UserControl from "./UserControl";
+import PostControl from "./PostControl";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
