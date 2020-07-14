@@ -31,3 +31,5 @@ function Header() {
     </StyledWrapper>
   );
 }
+
+export default Header;
