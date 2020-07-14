@@ -18,11 +18,11 @@ function EditPostForm (props) {
     return firestore.update({collection: 'posts', doc: post.id },propertiesToUpdate)
   }
   return (
-    <React.Fragment>
+    <>
       <ReusableForm 
         formSubmissionHandler={handleEditPostFormSubmission}
         buttonText="Update" />
-    </React.Fragment>
+    </>
   );
 }
 
