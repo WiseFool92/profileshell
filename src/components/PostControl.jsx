@@ -103,7 +103,7 @@ class PostControl extends React.Component {
     if ((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <>
-          <h1>You must be signed in to access the queue.</h1>
+          <h1>You must be signed in to access</h1>
         </>
       );
     }
