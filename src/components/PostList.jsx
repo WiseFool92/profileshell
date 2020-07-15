@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Post from './Post';
 import { useSelector } from 'react-redux';
-import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
+import { useFirestoreConnect, isLoaded} from 'react-redux-firebase';
+// import { isEmpty } from 'react-redux-firebase';
 
 function PostList(props){
 

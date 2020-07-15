@@ -4,7 +4,7 @@ import PostList from './PostList';
 import PostDetail from './PostDetail';
 import EditPostForm from './EditPostForm';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import * as a from './../actions';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
@@ -41,7 +41,7 @@ class PostControl extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.selectedProps != null) {
+    if (this.state.selectedPost != null) {
       this.setState({
         selectedPost: null,
         editing: false
@@ -67,6 +67,7 @@ class PostControl extends React.Component {
         description: post.get("description"),
         id: post.id
       }
+      this.setState({selectedPost: firestorePost});
     });
   }
   
@@ -137,7 +138,7 @@ class PostControl extends React.Component {
     return (
       <>
         {currentlyVisibleState}
-        <button onClick = {handleClick}>{buttonText}</button>
+        <button onClick = {this.handleClick}>{buttonText}</button>
       </>
     );
   }
