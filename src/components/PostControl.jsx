@@ -108,15 +108,6 @@ class PostControl extends React.Component {
       );
     }
 
-    // Test to get viewers to view created posts
-    if (this.props.formVisibleOnPage) {
-      currentlyVisibleState =
-      <NewPostForm
-        onNewPostCreation = {this.handleAddingNewPostToList} />;
-        buttonText = 'Return to Post List';
-    }
-    // Test
-
     if ((isLoaded(auth)) && (auth.currentUser != null)) {
       if (this.state.editing) {
         currentlyVisibleState =

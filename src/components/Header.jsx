@@ -26,6 +26,9 @@ function Header() {
           <li>
             <Link to = "/signin">Sign In</Link>
           </li>
+          <li>
+            <Link to = '/forum'>Forum</Link>
+          </li>
         </ul>
       </>
     </StyledWrapper>
