@@ -103,12 +103,21 @@ class PostControl extends React.Component {
     if ((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <>
-          <h1>You must be signed in to access</h1>
+          <h1>You must be signed in as a user to create posts</h1>
         </>
       );
     }
 
-    if ((isLoaded(auth)) (auth.currentUser != null)) {
+    // Test to get viewers to view created posts
+    if (this.props.formVisibleOnPage) {
+      currentlyVisibleState =
+      <NewPostForm
+        onNewPostCreation = {this.handleAddingNewPostToList} />;
+        buttonText = 'Return to Post List';
+    }
+    // Test
+
+    if ((isLoaded(auth)) && (auth.currentUser != null)) {
       if (this.state.editing) {
         currentlyVisibleState =
         <EditPostForm
