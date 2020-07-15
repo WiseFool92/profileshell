@@ -19,26 +19,26 @@ class PostControl extends React.Component {
     };
   }
 
-  componentDidMount() {
-    this.waitTimeUpdateTimer = setInterval(() =>
-      this.updatePostElapsedWaitTime(),
-    60000
-    );
-  }
+  // componentDidMount() {
+  //   this.waitTimeUpdateTimer = setInterval(() =>
+  //     this.updatePostElapsedWaitTime(),
+  //   60000
+  //   );
+  // }
 
-  componentWillUnmount(){
-    console.log("component unmounted!");
-    clearInterval(this.waitTimeUpdateTimer);
-  }
+  // componentWillUnmount(){
+  //   console.log("component unmounted!");
+  //   clearInterval(this.waitTimeUpdateTimer);
+  // }
 
-  updatePostElapsedWaitTime = () => {
-    const { dispatch } = this.props;
-    Object.values(this.props).forEach(post => {
-      const newFormattedWaitTime = post.timeOpen.fromNow(true);
-      const action = a.updateTime(post.id, newFormattedWaitTime);
-      dispatch(action);
-    });
-  }
+  // updatePostElapsedWaitTime = () => {
+  //   const { dispatch } = this.props;
+  //   Object.values(this.props).forEach(post => {
+  //     const newFormattedWaitTime = post.timeOpen.fromNow(true);
+  //     const action = a.updateTime(post.id, newFormattedWaitTime);
+  //     dispatch(action);
+  //   });
+  // }
 
   handleClick = () => {
     if (this.state.selectedPost != null) {

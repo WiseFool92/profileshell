@@ -12,12 +12,12 @@ import { createFirestoreInstance } from 'redux-firestore';
 import firebase from "./firebase";
 import 'firebase/auth';
 
-// const store = createStore(
-//   rootReducer, 
-//   // InitialState,
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// );
-const store = createStore(rootReducer);
+const store = createStore(
+  rootReducer, 
+  // InitialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+// const store = createStore(rootReducer);
 
 const rrfProps = {
   firebase,
