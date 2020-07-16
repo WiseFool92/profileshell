@@ -108,6 +108,25 @@ class PostControl extends React.Component {
       );
     }
 
+    if (this.props.formVisibleOnPage) {
+      currentlyVisibleState = 
+        <PostList postList = {this.props} />;
+    }
+    // if (this.props.formVisibleOnPage){
+    //   currentlyVisibleState =
+    //     <PostList
+    //       postList = {this.props} />;
+    //     }
+    //     return (
+    //       <>
+    //         {currentlyVisibleState}
+    //       </>
+    //     );
+    //   }
+    // }
+      
+  
+
     if ((isLoaded(auth)) && (auth.currentUser != null)) {
       if (this.state.editing) {
         currentlyVisibleState =
